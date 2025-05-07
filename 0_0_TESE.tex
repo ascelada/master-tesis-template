@@ -1,0 +1,58 @@
+% !TeX spellcheck = pt_BR
+% 0_0_TESE.tex
+% !TeX root = 0_0_TESE.tex
+%---------------------------------------
+%	RULE FILES
+%---------------------------------------
+\documentclass[	% frame	
+				]{tepromec} 
+\input{settings} % add only: packages and its customizations
+\input{custom_commands} % add custom commands (ex.: \newcommand{\+}[1]{\ensuremath{{\bm{\mathrm{#1}}}}}
+
+%---------------------------------------
+%	FRONTMATTER
+%---------------------------------------
+\input{0_1_dados_trabalho} % author and pre-text information (abstract...)
+\begin{document}
+%---------------------------------------
+%	PRE-TEXT
+%---------------------------------------
+\input{0_2_pretext_promec} 
+%---------------------------------------
+%	CHAPTERS
+%---------------------------------------
+\input{1_1_cap_1} % insert new files as needed
+% \input{1_2_cap_2}             
+% \input{1_3_cap_3} %-> COMMENT this chapter in the case of some error regarding GNUPLOT
+% \input{1_4_cap_4}      
+% \input{1_5_cap_5}       
+% \input{2_0_conclusoes}               
+%---------------------------------------
+%	BACKMATTER - PRINTING BIB
+%---------------------------------------
+\bibliographystyle{bib_promec.bst} % <-- FORMATTING
+\bibliography{refs.bib} %<-- BIBLIOGRAPHY FILE
+% ------------------------------------ %
+%%% ------- DO NOT EDIT THIS ------- %%%
+% begins here
+\setcounter{chapter}{0} %counters reset
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+% ends here
+% ------------------------------------ %
+% - Include your appendices here:
+% \input{4_1_apendices} % insert new files as needed
+% ------------------------------------ %
+%%% ------- DO NOT EDIT THIS ------- %%%
+% begins here
+\setcounter{chapter}{0} %counters reset
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+% ends here
+% ----------------------------------- %
+% - Include your attachments here
+% \input{5_1_anexos} % insert new files as needed
+%--------------------------------------
+\end{document}

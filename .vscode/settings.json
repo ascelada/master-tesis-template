@@ -1,0 +1,69 @@
+{
+    // Diretório de saída dos arquivos compilados (PDF, etc.)
+    "latex-workshop.latex.outDir": "build",
+  
+    // Configuração das ferramentas latexmk (pdf via pdflatex e via lualatex)
+    "latex-workshop.latex.tools": [
+      {
+        "name": "latexmk-pdf",
+        "command": "latexmk",
+        "args": [
+          "-pdf",
+          "-interaction=nonstopmode",
+          "-synctex=1",
+          "-outdir=build",
+          "%DOC%"
+        ]
+      },
+      {
+        "name": "latexmk-lualatex",
+        "command": "latexmk",
+        "args": [
+          "-pdf",
+          "-pdflatex=lualatex",
+          "-interaction=nonstopmode",
+          "-synctex=1",
+          "-outdir=build",
+          "%DOC%"
+        ]
+      }
+    ],
+  
+    // Receitas de build: pdflatex e lualatex
+    "latex-workshop.latex.recipes": [
+      {
+        "name": "latexmk (pdf)",
+        "tools": ["latexmk-pdf"]
+      },
+      {
+        "name": "latexmk (LuaLaTeX)",
+        "tools": ["latexmk-lualatex"]
+      }
+    ],
+  
+    // Limpeza de arquivos auxiliares após compilação
+    "latex-workshop.latex.clean.onBuild": true,
+    "latex-workshop.latex.clean.fileTypes": [
+      "*.aux",
+      "*.bbl",
+      "*.blg",
+      "*.idx",
+      "*.ind",
+      "*.lof",
+      "*.log",
+      "*.lot",
+      "*.toc",
+      "*.acn",
+      "*.acr",
+      "*.alg",
+      "*.glg",
+      "*.glo",
+      "*.gls",
+      "*.ist",
+      "*.fls",
+      "*.fdb_latexmk",
+      "*.synctex.gz"
+    ],
+    "latex-workshop.latex.clean.subfolder.enabled": true
+  }
+  

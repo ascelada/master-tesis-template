@@ -1,0 +1,76 @@
+% !TeX spellcheck = pt
+% !TeX root = 0_0_TESE.tex
+%---------------------------------------
+%	MANDATORY ENTRIES FOR promec.cls
+%---------------------------------------
+% Thesis title
+\DocTitulo{ESCOAMENTO DE FLUIDO VISCOPLÁSTICO COM SUPERFÍCIE LIVRE SOBRE OBSTÁCULO SUBMERSO: COMPARAÇÃO ENTRE A ABORDAGEM TEÓRICA DE SAINT-VENANT E MODELO DE ALTA FIDELIDADE COMPUTACIONAL}
+% \DocTitulo{EXEMPLO DE T\'{I}TULO EXCESSIVAMENTE EXTENSO E DEMASIADAMENTE MONÓTONO EMPREGADO MERAMENTE PARA FINS DID\'{A}TICOS DE EXEMPLIFICA\c{C}\~{A}O EGOC\^{E}NTRICA - UMA ABORDAGEM ANTROPOLOGICAMENTE IN\'{U}TIL}
+%---------------------------------------
+% Authors name
+\DocAutor{Lorenzo Olivo Filippini}
+%---------------------------------------
+% Previous title (ex.: Engenheiro | Mestre)
+\DocAutorTitle{Engenheiro de Energia}
+%---------------------------------------
+% Short Date (month and year)
+\DocData{Novembro de 2024} % Ex.: Abril de 2056
+% Full Date (day, month and year)
+\DocDataB{Dia, Mês e Ano} % Ex.: 1 de Abril de 2056
+%---------------------------------------
+% Identify as: Mestre or Doutor or Qualifica (IMPORTANT: exactly as written in ex.)
+\DocMScouDr{Mestre}
+%---------------------------------------
+% Advisors name
+\DocOrientador{Prof. Dr. Guilherme Henrique Fiorot}
+% Number of co-advisors (NO co-advisor = 0 (zero))
+\DocNoCoorientador{0}
+% Name of co-advisors 
+% If more than 1 co-advisor, employ \\ as separator
+% ex.: \DocCoorientador{co-orientador1\\co-orientador2\\co-orientador3}
+\DocCoorientador{Prof. Dr. Guilherme Henrique Fiorot}
+%---------------------------------------
+% Area (ex.: Mec\^{a}nica dos S\'{o}lidos)
+\DocAreaConc{Fenômenos de Transporte}
+%---------------------------------------
+% Thesis board
+% employ (\\ \vfill) as separator (witout the paranthesis)
+% ex.: banca1\\ \vfill banca2\\ \vfill...
+\DocBanca{Prof. Dr. Nome banca 1 \dotfill por exemplo: PROMEC / UFRGS
+\\ \vfill Prof. Dr. Nome banca 2 \dotfill PPGXXX / UFXXX
+\\ \vfill Prof. Dr. Nome banca 3 \dotfill PPGXXX / UFXXX
+}
+%---------------------------------------
+% PROMEC coordinator
+\DocCoord{Prof. Dr. Daniel Milbrath De Leon}
+%---------------------------------------
+% Thesis status (use Avaliacao or Aprovado)
+\DocDef{Avaliacao}
+%---------------------------------------
+% RESUMO
+%---------------------------------------
+\DocResumo{Como consequência das mudanças climáticas, o aumento da precipitação extrema intensifica a frequência e a magnitude de movimentos de massa, como deslizamentos de terra, corridas de lama e corridas detríticas, especialmente em regiões do sudeste e sul do Brasil, onde uma parcela significativa da população vive em áreas de risco. Esses desastres, frequentemente catastróficos em termos humanos, estruturais e ambientais, exigem um entendimento mecanicista para a determinação de áreas de risco, zonas de deposição e potencial erosivo, bem como para o dimensionamento de estruturas de proteção. Nesse contexto, a interação do escoamento com obstáculos submersos é de particular interesse, uma vez que permite uma compreensão detalhada do desenvolvimento do evento ao longo de uma topografia acidentada. Do ponto de vista da dinâmica e descrição do fenômeno, o estudo de movimentos de massa pode ser realizado observando sua composição e perfil reológico do escoamento, caracterizado por um comportamento não newtoniano viscoplástico e frequentemente descrito pelo modelo de Herschel-Bulkley. No âmbito da modelagem matemática, abordagens simplificadas, como obtidas através da teoria da lubrificação e as Equações de Saint-Venant, descrevem escoamentos onde a profundidade é expressivamente menor que o seu comprimento, e são amplamente utilizadas devido à sua eficácia e simplicidade, embora apresentem limitações em situações mais complexas. Por outro lado, técnicas de dinâmica dos fluidos computacional permitem resolver com alta fidelidade as equações completas que regem os escoamentos, especialmente em combinação com modelos de regularização para fluidos viscoplásticos. Contudo, as simulações tridimensionais são computacionalmente intensivas, o que torna modelos simplificados, como a abordagem de Saint-Venant, atrativos para aplicações práticas. Assim, este trabalho investiga o escoamento de fluidos viscoplásticos com superfície livre sobre obstáculos submersos, comparando soluções analíticas baseadas em Saint-Venant com simulações numéricas no \textit{OpenFOAM}, a fim de avaliar suas limitações e aplicabilidades. Ademais, analisa-se a influência de parâmetros reológicos e geométricos na dinâmica do escoamento.
+}
+\DocPalavrasChave{Movimentos de massa; Escoamentos de Fluidos Viscoplásticos; Superfície Livre; Abordagem de Saint-Venant.}
+%---------------------------------------
+
+%---------------------------------------
+% ABSTRACT
+%---------------------------------------
+% Thesis title translated to English
+\DocTituloIng{FREE-SURFACE VISCOPLASTIC FLUID FLOW OVER SUBMERGED OBSTACLES: COMPARISON BETWEEN THE SAINT-VENANT THEORETICAL APPROACH AND HIGH-FIDELITY COMPUTATIONAL MODELING}
+\DocAbstract{As a consequence of climate change, the increase in extreme precipitation intensifies the frequency and magnitude of mass movements, such as landslides, mudflows, and debris flows, particularly in the southeastern and southern regions of Brazil, where a significant portion of the population resides in high-risk areas. These disasters, often catastrophic in human, structural, and environmental terms, demand a mechanistic understanding to identify risk zones, deposition areas, and erosive potential, as well as to design protective structures. In this context, the interaction between flow and submerged obstacles is of particular interest, as it provides a detailed understanding of event progression over rugged topography. From the perspective of dynamics and phenomena description, studying mass movements requires analyzing their composition and the rheological profile of the flow, typically exhibiting a non-Newtonian viscoplastic behavior often modeled using the Herschel-Bulkley formulation. In the realm of mathematical modeling, simplified approaches, such as those derived from lubrication theory and the Saint-Venant Equations, are commonly employed to describe flows where the depth is significantly smaller than the length. These methods are widely used due to their efficiency and simplicity, despite their limitations in more complex scenarios. On the other hand, computational fluid dynamics (CFD) techniques enable the resolution of the full governing equations with high fidelity, particularly when combined with regularization models for viscoplastic fluids. However, three-dimensional simulations are computationally demanding, making simplified models like the Saint-Venant approach attractive for practical applications. This study investigates the free-surface flow of viscoplastic fluids over submerged obstacles, comparing analytical solutions based on the Saint-Venant approach with numerical simulations conducted in \textit{OpenFOAM}, to evaluate their limitations and applicability. Furthermore, the influence of rheological and geometric parameters on flow dynamics is analyzed.
+}
+\DocKeywords{Mass movements; Viscoplastic fluid flow; Free surface; Saint-Venant approach.}
+
+%---------------------------------------
+% EXTRA ABSTRACT - OPTIONAL
+%---------------------------------------
+% Abstract in a third language
+\DocNResumosExtra{0} % set to 1 (0 = NO extra abstract)
+\DocAbstractExtraName{PALAVRA RESUMO NA TERCEIRA L\'{I}NGUA}
+\DocTituloExtra{TITULO NA TERCEIRA LINGUA}
+\DocResumoExtra{Tradução do resumo para uma terceira língua.
+}
+\DocKeywordsExtra{Primeira palavra; Segunda; ...; Última.}
+%---------------------------------------
